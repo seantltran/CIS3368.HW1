@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <ListView fx:id="employeeListView" />
+    <VBox>
+        <HBox>
+            <Label prefWidth="100" text="First Name" />
+            <TextField fx:id="firstNameTextField" prefWidth="150" />
+        </HBox>
+        <HBox>
+            <Label prefWidth="100" text="Last Name" />
+            <TextField fx:id="lastNameTextField" prefWidth="150" />
+        </HBox>
+        <HBox>
+            <Label prefWidth="100" text="Is Active" />
+            <CheckBox fx:id="isActiveCheckBox" />
+        </HBox>
+        <HBox>
+            <VBox>
+                <Button onAction="#clearEmployee" mnemonicParsing="false" text="clear" />
+            </VBox>
+            <VBox>
+                <Button onAction="#addEmployee" mnemonicParsing="false" text="add new" />
+            </VBox>
+            <VBox>
+                <Button onAction="#deleteEmployee" mnemonicParsing="false" text="delete selected" />
+            </VBox>
+        </HBox>
+
+    </VBox>
+
+</HBox>
